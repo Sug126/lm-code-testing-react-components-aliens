@@ -8,7 +8,7 @@ import ReasonForSparing from './ReasonForSparing';
 
 
 	interface formProps {
-		saveData?: (data: any) => void;
+		saveData ?: (data: any) => void;
 	}
 
 
@@ -19,7 +19,6 @@ const W12MForm: React.FC<formProps> = ({ saveData }) => {
 	const [numberOfBeings, setNumberOfBeings] = useState<string>('');
 	const [answer, setAnswer] = useState<string>('4');
 	const [reasonForSparing, setReasonForSparing] = useState<string>('');
-	const [form, setForm] = useState<string>('');
 	const [formData, setFormData] = useState<string>('');
 	let isSubmitted : boolean = false
 
